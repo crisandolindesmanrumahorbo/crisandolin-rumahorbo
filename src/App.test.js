@@ -1,9 +1,11 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders Dashboard', () => {
+  const wrapper = shallow(<App />);
+
+  const dashboardContainer = wrapper.find('DashboardContainer');
+
+  expect(dashboardContainer.exists()).toBeTruthy();
 });
