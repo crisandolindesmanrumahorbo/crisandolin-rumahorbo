@@ -7,7 +7,10 @@ import linkedinIcon from '../asset/linkedin.svg';
 import instagramIcon from '../asset/instagram.svg';
 import downloadIcon from '../asset/download.svg';
 import emailIcon from '../asset/email.svg';
-import hireImage from '../asset/Untitled design.png';
+import communicativeImage from '../asset/5.png';
+import collaborationImage from '../asset/4.png';
+import conscientiousImage from '../asset/2.png';
+import responsibleImage from '../asset/3.png';
 import springImage from '../asset/pngfind.com-spring-png-535670.png';
 import nodeImage from '../asset/kisspng-node-js-javascript-express-js-portable-network-gra-mixin-software-5b7c7247ce6172.8523259515348823758453.png';
 import reactImage from '../asset/react.png';
@@ -82,20 +85,20 @@ const DashboardContainer = () => (
 
     <h1 className="hire-me-text">Why Hire Me?</h1>
 
-    <img className="hire-communicative" src={hireImage} alt="" />
+    <img className="hire-communicative" src={communicativeImage} alt="" />
     <h2 className="hire-communicative-h2">Communicative</h2>
     <p className="hire-communicative-body">{HIRE_ME_TEXT_COMMUNICATIVE}</p>
 
-    <img className="hire-collaborative" src={hireImage} alt="" />
+    <img className="hire-collaborative" src={collaborationImage} alt="" />
     <h2 className="hire-collaborative-h2">Collaborative</h2>
     <p className="hire-collaborative-body">{HIRE_ME_TEXT_COLLABORATIVE}</p>
 
-    <img className="hire-conscientious" src={hireImage} alt="" />
+    <img className="hire-conscientious" src={conscientiousImage} alt="" />
     <h2 className="hire-conscientious-h2">Conscientious</h2>
     <p className="hire-conscientious-body">{HIRE_ME_TEXT_CONSCIENTIOUS}</p>
 
-    <img className="hire-sans" src={hireImage} alt="" />
-    <h2 className="hire-sans-h2">Sans Beud</h2>
+    <img className="hire-sans" src={responsibleImage} alt="" />
+    <h2 className="hire-sans-h2">Responsible</h2>
     <p className="hire-sans-body">{HIRE_ME_TEXT_RESPONSIBLE}</p>
 
     <div className="box-interest" />
