@@ -15,7 +15,20 @@ import reactNativeImage from '../asset/pinpng.com-transformer-logo-png-5100567.p
 import androidImage from '../asset/android.svg';
 
 const {
-  INTRO_NAME, INTRO_NAME_SECOND, INTRO_GREET, DOWNLOAD_CV, HIRE_ME_TEXT
+  INTRO_NAME,
+  INTRO_NAME_SECOND,
+  INTRO_GREET,
+  DOWNLOAD_CV,
+  HIRE_ME_TEXT_COMMUNICATIVE,
+  HIRE_ME_TEXT_COLLABORATIVE,
+  HIRE_ME_TEXT_CONSCIENTIOUS,
+  HIRE_ME_TEXT_RESPONSIBLE,
+  MAIL_TO_LINK,
+  TELEGRAM_LINK,
+  LINKEDIN_LINK,
+  INSTAGRAM_LINK,
+  CV_DOWNLOAD_LINK,
+  GITHUB_LINK
 } = constant;
 
 function _onOpenWindow(link) {
@@ -30,49 +43,39 @@ const DashboardContainer = () => (
     <img className="card-image" src={cardImage} alt="" />
     <Button
       className="button-email-me"
-      onClick={() => _onOpenWindow('mailto:crisandolin@gmail.com')}
+      onClick={() => _onOpenWindow(MAIL_TO_LINK)}
     >
       <img className="email-icon" src={emailIcon} alt="" />
       <span>Email Me</span>
     </Button>
     <img className="card-image" src={cardImage} alt="" />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <img
       className="telegram-icon"
       src={telegramIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://t.me/desmancris')}
+      onClick={() => _onOpenWindow(TELEGRAM_LINK)}
     />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <img
       className="linkedin-icon"
       src={linkedinIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://www.linkedin.com/in/crisandolin/')}
+      onClick={() => _onOpenWindow(LINKEDIN_LINK)}
     />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <img
       className="instagram-icon"
       src={instagramIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://www.instagram.com/crisandolin/')}
+      onClick={() => _onOpenWindow(INSTAGRAM_LINK)}
     />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <img
       className="download-icon"
       src={downloadIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://drive.google.com/file/d/1FoSdxNw6h5QBLVRccGPuYLQmZpoP74_J/view?usp=sharing')}
+      onClick={() => _onOpenWindow(CV_DOWNLOAD_LINK)}
     />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <p
       className="download-cv-text"
-      onClick={() => _onOpenWindow('https://drive.google.com/file/d/1FoSdxNw6h5QBLVRccGPuYLQmZpoP74_J/view?usp=sharing')}
+      onClick={() => _onOpenWindow(CV_DOWNLOAD_LINK)}
     >
       {DOWNLOAD_CV}
     </p>
@@ -81,32 +84,33 @@ const DashboardContainer = () => (
 
     <img className="hire-communicative" src={hireImage} alt="" />
     <h2 className="hire-communicative-h2">Communicative</h2>
-    <p className="hire-communicative-body">{HIRE_ME_TEXT}</p>
+    <p className="hire-communicative-body">{HIRE_ME_TEXT_COMMUNICATIVE}</p>
 
     <img className="hire-collaborative" src={hireImage} alt="" />
     <h2 className="hire-collaborative-h2">Collaborative</h2>
-    <p className="hire-collaborative-body">{HIRE_ME_TEXT}</p>
+    <p className="hire-collaborative-body">{HIRE_ME_TEXT_COLLABORATIVE}</p>
 
     <img className="hire-conscientious" src={hireImage} alt="" />
     <h2 className="hire-conscientious-h2">Conscientious</h2>
-    <p className="hire-conscientious-body">{HIRE_ME_TEXT}</p>
+    <p className="hire-conscientious-body">{HIRE_ME_TEXT_CONSCIENTIOUS}</p>
 
     <img className="hire-sans" src={hireImage} alt="" />
     <h2 className="hire-sans-h2">Sans Beud</h2>
-    <p className="hire-sans-body">{HIRE_ME_TEXT}</p>
+    <p className="hire-sans-body">{HIRE_ME_TEXT_RESPONSIBLE}</p>
 
     <div className="box-interest" />
     <p className="interested-text">Interested working with me?</p>
-    <Button className="more-project" variant="outline-primary" onClick={() => _onOpenWindow('https://github.com/crisandolindesmanrumahorbo')}>More Project</Button>
+    <Button className="more-project" variant="outline-primary" onClick={() => _onOpenWindow(GITHUB_LINK)}>More Project</Button>
     <Button
       className="button-email-me-interest"
-      onClick={() => _onOpenWindow('mailto:crisandolin@gmail.com')}
+      onClick={() => _onOpenWindow(MAIL_TO_LINK)}
     >
       <img className="email-icon" src={emailIcon} alt="" />
       <span>Email Me</span>
     </Button>
 
     <h1 className="skills-tools-text">Skills & Tools</h1>
+
     <img className="spring-tool" src={springImage} alt="" />
     <img className="node-tool" src={nodeImage} alt="" />
     <img className="react-tool" src={reactImage} alt="" />
@@ -115,30 +119,24 @@ const DashboardContainer = () => (
 
     <div className="footer-box" />
     <h2 className="get-touch-text">Get in touch</h2>
-    <h2 className="business-text">For buisness please send me email crisandolin@gmail.com</h2>
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
+    <h2 className="business-text">For business please send me email crisandolin@gmail.com</h2>
     <img
       className="telegram-icon-footer"
       src={telegramIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://t.me/desmancris')}
+      onClick={() => _onOpenWindow(TELEGRAM_LINK)}
     />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <img
       className="linkedin-icon-footer"
       src={linkedinIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://www.linkedin.com/in/crisandolin/')}
+      onClick={() => _onOpenWindow(LINKEDIN_LINK)}
     />
-    {/* eslint-disable-next-line max-len */}
-    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
     <img
       className="instagram-icon-footer"
       src={instagramIcon}
       alt=""
-      onClick={() => _onOpenWindow('https://www.instagram.com/crisandolin/')}
+      onClick={() => _onOpenWindow(INSTAGRAM_LINK)}
     />
   </>
 );

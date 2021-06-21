@@ -8,6 +8,12 @@ import { Navbar } from 'react-bootstrap';
 import DashboardContainer from './container/DashboardContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './asset/Untitled design.png';
+import constant from './constant';
+
+const {
+  MAIL_TO_LINK,
+  GITHUB_LINK
+} = constant;
 
 function App() {
   return (
@@ -24,17 +30,18 @@ function App() {
           <p className="logo-name">Crisandolin Rumahorbo</p>
 
         </Navbar.Brand>
-        <Navbar.Brand href="https://github.com/crisandolindesmanrumahorbo" target="_blank">
+        <Navbar.Brand href={GITHUB_LINK} target="_blank">
           <p className="project">Project</p>
         </Navbar.Brand>
 
-        <Navbar.Brand href="mailto:crisandolin@gmail.com" target="_blank">
+        <Navbar.Brand href={MAIL_TO_LINK} target="_blank">
           <p className="contact">Contact</p>
         </Navbar.Brand>
       </Navbar>
 
       <Switch>
         <Route exact path="/" component={DashboardContainer} />
+        <Route exact path="/home" component={DashboardContainer} />
       </Switch>
     </>
   );
