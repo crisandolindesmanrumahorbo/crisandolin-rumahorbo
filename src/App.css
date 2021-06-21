@@ -1,38 +1,785 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.name {
+    position: absolute;
+    width: 331px;
+    height: 37px;
+    left: 156px;
+    top: 177px;
+
+    /* heading2 */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    /* blue */
+
+    color: #01539D;
+
+}
+
+.name2 {
+    position: absolute;
+    width: 576px;
+    height: 153px;
+    left: 156px;
+    top: 232px;
+
+    /* heading1 */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #000000;
+}
+
+.greet {
+    position: absolute;
+    width: 456px;
+    height: 178px;
+    left: 156px;
+    top: 385px;
+
+    /* body text */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    /* gray 2nd text */
+
+    color: #666666;
+
+}
+
+.card-image {
+    position: absolute;
+    width: 576px;
+    height: 385px;
+    left: 708px;
+    top: 251px;
+
+    background: url(asset/DSC01008.jpg);
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+}
+
+.email-me {
+    /* Email Me */
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 209px;
+    top: 599px;
+
+    /* body text */
+    color: #d00202;
+}
+
+.button-email-me {
+    /* Rectangle 3 */
+    position: absolute;
+    width: 136px;
+    height: 48px;
+    left: 156px;
+    top: 588px;
+
+    display: flex;
+    align-items: center;
+}
+
+.button-email-me > * {
+    margin-right: -25px;
+}
+
+.telegram-icon {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 322px;
+    top: 599px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.email-icon {
+    position: absolute;
+    left: 12.01%;
+    right: 86.17%;
+    top: 30.77%;
+    bottom: 68.32%;
+
+    width: 26px;
+    height: 18px;
+}
+
+.telegram-icon:hover {
+    filter: invert(33%) sepia(100%) saturate(830%) hue-rotate(168deg) brightness(101%) contrast(104%);
+}
+
+.telegram-icon:active {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
+}
+
+.linkedin-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 394px;
+    top: 601px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.linkedin-icon:hover {
+    filter: invert(27%) sepia(75%) saturate(5368%) hue-rotate(186deg) brightness(92%) contrast(101%);
+}
+
+.linkedin-icon:active {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
+}
+
+.instagram-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 461px;
+    top: 601px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.instagram-icon:hover {
+    filter: invert(34%) sepia(91%) saturate(3184%) hue-rotate(321deg) brightness(89%) contrast(101%);
+}
+
+.instagram-icon:active {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
+}
+
+.download-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 156px;
+    top: 662px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.download-icon:hover {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
+}
+
+.download-cv-text {
+    position: absolute;
+    width: 106px;
+    height: 26px;
+    left: 186px;
+    top: 661px;
+
+    /* body text */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    /* gray 2nd text */
+
+    color: #666666;
+}
+
+.download-cv-text:hover {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.navbar {
+    width: 1440px;
+    height: 100px;
+
+    background: #F6F6F9;
+}
+
+.logo {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: 62px;
+    top: 27px;
+
+    background: url('asset/Untitled design.png');
+    border-radius: 51px;
+}
+
+.logo-name {
+    /* crisandolin */
+    position: absolute;
+    width: 88px;
+    height: 65px;
+    left: 121px;
+    top: 18px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.project {
+    position: absolute;
+    width: 61px;
+    height: 52px;
+    left: 1176px;
+    top: 25px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.contact {
+    position: absolute;
+    width: 72px;
+    height: 52px;
+    left: 1289px;
+    top: 25px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.hire-me-text {
+    /* Why Hire Me? */
+    position: absolute;
+    width: 206px;
+    height: 37px;
+    left: 622px;
+    top: 763px;
+
+    /* heading2 */
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    /* blue */
+    color: #01539D;
+}
+
+.hire-communicative {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    left: 209px;
+    top: 837px;
+
+    background: url('asset/Untitled design.png');
+    border-radius: 100px;
+}
+
+.hire-collaborative {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    left: 498px;
+    top: 837px;
+
+    background: url('asset/Untitled design.png');
+    border-radius: 100px;
+}
+
+.hire-conscientious {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    left: 785px;
+    top: 837px;
+
+    background: url('asset/Untitled design.png');
+    border-radius: 100px;
+}
+
+.hire-sans {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    left: 1073px;
+    top: 837px;
+
+    background: url('asset/Untitled design.png');
+    border-radius: 100px;
+}
+
+.hire-communicative-h2 {
+    position: absolute;
+    width: 196px;
+    height: 14px;
+    left: 190px;
+    top: 1011px;
+
+    /* body text */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.hire-communicative-body {
+    position: absolute;
+    width: 264px;
+    height: 75px;
+    left: 156px;
+    top: 1041px;
+
+    /* body small */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    /* gray 2nd text */
+
+    color: #666666;
+}
+
+.hire-collaborative-h2 {
+    position: absolute;
+    width: 196px;
+    height: 14px;
+    left: 480px;
+    top: 1011px;
+
+    /* body text */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.hire-collaborative-body {
+    position: absolute;
+    width: 264px;
+    height: 75px;
+    left: 442px;
+    top: 1042px;
+
+    /* body small */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    /* gray 2nd text */
+
+    color: #666666;
+}
+
+.hire-conscientious-h2 {
+    position: absolute;
+    width: 196px;
+    height: 14px;
+    left: 767px;
+    top: 1012px;
+
+    /* body text */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.hire-conscientious-body {
+    position: absolute;
+    width: 264px;
+    height: 75px;
+    left: 728px;
+    top: 1040px;
+
+    /* body small */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    /* gray 2nd text */
+
+    color: #666666;
+}
+
+.hire-sans-h2 {
+    position: absolute;
+    width: 196px;
+    height: 14px;
+    left: 1055px;
+    top: 1010px;
+
+    /* body text */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.hire-sans-body {
+    position: absolute;
+    width: 264px;
+    height: 75px;
+    left: 1014px;
+    top: 1041px;
+
+    /* body small */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    /* gray 2nd text */
+
+    color: #666666;
+
+}
+
+.box-interest {
+    position: absolute;
+    width: 1128px;
+    height: 113px;
+    left: 156px;
+    top: 1193px;
+
+    /* linear */
+    background: linear-gradient(134.99deg, #FFFFFF -73.34%, #B8CFE3 -30.9%, #F2F6FA 13.82%, #E3ECF4 35.8%, #F9FBFC 41.11%, #B8CFE3 66.86%, #B8CFE3 66.87%);
+    border-radius: 10px;
+}
+
+.interested-text {
+    position: absolute;
+    width: 494px;
+    height: 37px;
+    left: 199px;
+    top: 1231px;
+
+    /* heading2 */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    /* blue */
+
+    color: #01539D;
+}
+
+.more-project {
+    position: absolute;
+    width: 136px;
+    height: 48px;
+    left: 928px;
+    top: 1226px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.more-project:hover {
+    color: #01539D;
+}
+
+.button-email-me-interest {
+    position: absolute;
+    width: 136px;
+    height: 48px;
+    left: 1101px;
+    top: 1226px;
+}
+
+.button-email-me-interest > * {
+    margin-right: -25px;
+}
+
+.skills-tools-text {
+    position: absolute;
+    width: 206px;
+    height: 37px;
+    left: 617px;
+    top: 1382px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* blue */
+
+    color: #01539D;
+}
+
+.spring-tool {
+    position: absolute;
+    width: 207px;
+    height: 53px;
+    left: 228px;
+    top: 1500px;
+}
+
+.node-tool {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 466px;
+    top: 1446px;
+}
+
+.react-tool {
+    position: absolute;
+    width: 211px;
+    height: 73px;
+    left: 654px;
+    top: 1489px;
+}
+
+.react-native-tool {
+    position: absolute;
+    width: 109px;
+    height: 117px;
+    left: 884px;
+    top: 1468px;
+}
+
+.android-tool {
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    left: 1024px;
+    top: 1432px;
+}
+
+.footer-box {
+    position: absolute;
+    width: 1440px;
+    height: 264px;
+    left: 0;
+    top: 1696px;
+
+    background: #242424;
+}
+
+.get-touch-text {
+    position: absolute;
+    width: 206px;
+    height: 37px;
+    left: 156px;
+    top: 1746px;
+
+    /* heading2 */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    /* white background */
+
+    color: #F6F6F9;
+}
+
+.business-text {
+    position: absolute;
+    width: 456px;
+    height: 43px;
+    left: 156px;
+    top: 1806px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    /* white background */
+
+    color: #F6F6F9;
+}
+
+.telegram-icon-footer {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 156px;
+    top: 1854px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.telegram-icon-footer:hover {
+    filter: invert(33%) sepia(100%) saturate(830%) hue-rotate(168deg) brightness(101%) contrast(104%);
+}
+
+.telegram-icon-footer:active {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
+}
+
+.linkedin-icon-footer {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 228px;
+    top: 1856px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.linkedin-icon-footer:hover {
+    filter: invert(27%) sepia(75%) saturate(5368%) hue-rotate(186deg) brightness(92%) contrast(101%);
+}
+
+.linkedin-icon-footer:active {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
+}
+
+.instagram-icon-footer {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 295px;
+    top: 1856px;
+
+    filter: invert(36%) sepia(12%) saturate(111%) hue-rotate(314deg) brightness(105%) contrast(93%);
+}
+
+.instagram-icon-footer:hover {
+    filter: invert(34%) sepia(91%) saturate(3184%) hue-rotate(321deg) brightness(89%) contrast(101%);
+}
+
+.instagram-icon-footer:active {
+    filter: invert(0%) sepia(0%) saturate(20%) hue-rotate(310deg) brightness(91%) contrast(104%);
 }
