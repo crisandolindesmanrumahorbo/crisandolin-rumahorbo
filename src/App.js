@@ -42,6 +42,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={DashboardContainer} />
         <Route exact path="/home" component={DashboardContainer} />
+        <Route exact path="/portofolio/" component={DashboardContainer} />
       </Switch>
     </>
   );
